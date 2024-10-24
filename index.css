@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px; /* Slider yüksekliği */
+}
+
+.carousel-container {
+    display: flex; /* Flexbox ile yan yana diz */
+    transition: transform 0.5s ease; /* Geçiş animasyonu */
+}
+
+.carousel-item {
+    min-width: 100%; /* Her bir resim ekranı kaplasın */
+    height: 400px; /* Resim yüksekliği */
+}
+
+.carousel-item img {
+    width: 100%; /* Resim genişliği */
+    height: 100%; /* Resim yüksekliği */
+    object-fit: contain; /* Resim boyutlandırma */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10vw; /* Solda yerleştir */
+}
+
+.next {
+    right: 10vw; /* Sağda yerleştir */
+}
